@@ -16,6 +16,7 @@ public class EmailService {
         message.setTo(to);
         message.setSubject(subject);
         message.setText(text);
+        // message.setFrom("sanjayadira8@gmail.com"); // Pastikan alamat ini sama dengan spring.mail.username
 
         mailSender.send(message);
     }
